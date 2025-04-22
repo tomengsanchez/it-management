@@ -20,16 +20,14 @@ const breadcrumbs: BreadcrumbItem[] = [
 export default function Departments() {
     
     const newDepartment = () => {
-        window.location.href='/department/create'
+        window.location.href='/department'
     };
 
     return (
         <AppLayout breadcrumbs={breadcrumbs}>
             <Head title="Department" />
             <div className="ml-4 mt-4 flex items-center justify-between">
-                <Button variant='link' onClick={newDepartment}>New Department</Button> 
-                
-                
+                <Button variant='link' onClick={newDepartment}>Back</Button> 
             </div>
             
         </AppLayout>
