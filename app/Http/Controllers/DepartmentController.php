@@ -26,6 +26,9 @@ class DepartmentController extends Controller
     public function create()
     {
         //
+        return Inertia::render('Department/Create', [
+            'departments' => department::all(),
+        ]);
     }
 
     /**
